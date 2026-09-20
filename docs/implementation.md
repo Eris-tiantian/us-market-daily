@@ -8,7 +8,7 @@ The existing app, market analysis, Matplotlib report and ServerChan transport ar
 - [x] Fixed TEM / RXRX / ENPH cards and independently recalculated daily candidates.
 - [x] Publish PNG, verify anonymous bytes, send, then persist session; fail closed on uncertain state.
 - [x] Unit/regression tests plus real market fetch, scan and visual PNG inspection.
-- [ ] GitHub repository, encrypted Actions Secret, manual workflow and duplicate-session run.
+- [x] GitHub repository, encrypted Actions Secret, manual workflow and duplicate-session run.
 
 Ownership: data provider/universe, analysis/scanner, report renderer are separate modules; app, state, delivery, deployment and final integration are coordinated centrally.
 
