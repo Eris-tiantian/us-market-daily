@@ -19,17 +19,17 @@ jobs:
     timeout-minutes: 55
     steps:
       - name: Checkout source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: requirements*.txt
 
       - name: Restore market-data cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: cache
           key: market-bars-${{ runner.os }}-${{ github.run_number }}
@@ -62,7 +62,7 @@ jobs:
 
       - name: Upload diagnostic artifacts
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: market-report-${{ github.run_id }}
           path: |
