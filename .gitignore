@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.env
+.state/
+reports/
+logs/
+cache/
+*.zip
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
